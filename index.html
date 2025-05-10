@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WafelBud – Budujemy z Charakterem</title>
+  <style>
+    body {
+      background-color: #1e1e1e;
+      color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2 {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 24px;
+    }
+
+    .baner-glowny img {
+      width: 100%;
+      height: auto;
+    }
+
+    .gallery, .video-section, .form-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 40px 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 600px;
+      margin-bottom: 10px;
+    }
+
+    video {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.7);
+      margin-bottom: 30px;
+    }
+
+    form {
+      max-width: 500px;
+      width: 100%;
+      background-color: #2e2e2e;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      margin-bottom: 15px;
+    }
+
+    button {
+      background-color: #f57c00;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ff9800;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    @media (max-width: 768px) {
+      .gallery img, video, form, .baner-glowny img {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="baner-glowny">
+  <img src="stronka 1.jpeg" alt="WafelBud – Nasza robota">
+</div>
+
+<header>
+  <h1>WAFELBUD</h1>
+  <p>Budujemy z Charakterem</p>
+</header>
+
+<section class="about">
+  <h2>O nas</h2>
+  <p>WafelBud to firma z Charakterem. Zajmujemy się Profesjonalnym Murowaniem, Tynkowaniem Maszynowym, Malowaniem Natryskowym oraz Wykonywaniem solidnych Elewacji. Działamy na terenie Zielonej Góry i okolic. Nasze przeznaczenie, precyzja i pasja sprawiają, że każda realizacja zostaje dopięta na ostatni guzik.</p>
+</section>
+
+<section class="services">
+  <h2>Nasze Usługi</h2>
+  <ul>
+    <li>Murowanie</li>
+    <li>Tynki Maszynowe</li>
+    <li>Elewacje</li>
+    <li>Malowanie Natryskowe</li>
+  </ul>
+</section>
+
+<h2>Galeria</h2>
+<section class="gallery">
+  <img src="img/stronka1.jpeg" alt="Zdjęcie 1">
+  <img src="img/stronka2.jpeg" alt="Zdjęcie 2">
+  <img src="img/stronka3.jpeg" alt="Zdjęcie 3">
+</section>
+
+<section class="video-section">
+  <h2>Stan PRZED wykonaniem</h2>
+  <video controls>
+    <source src="filmprzedwykonaniem.mp4" type="video/mp4">
+    Twoja przeglądarka nie obsługuje elementu wideo.
+  </video>
+
+  <h2>Stan PO wykonaniu</h2>
+  <video controls>
+    <source src="filmpowykonaniu.mp4" type="video/mp4">
+    Twoja przeglądarka nie obsługuje elementu wideo.
+  </video>
+</section>
+
+<section class="form-section">
+  <h2>Formularz kontaktowy</h2>
+  <form action="https://formspree.io/f/yourformid" method="POST">
+    <label for="name">Imię:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="_replyto" required>
+
+    <label for="message">Wiadomość:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Wyślij</button>
+  </form>
+</section>
+
+<footer>
+  <p>Zadzwoń: <strong>796 085 573</strong></p>
+  <p>&copy; 2025 WafelBud. Wszelkie prawa zastrzeżone.</p>
+</footer>
+
+</body>
+</html>
+
