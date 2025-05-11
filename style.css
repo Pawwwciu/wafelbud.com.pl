@@ -1,7 +1,7 @@
 body
  .baner-glowny img {
   width: 100%;
-  max-height: 150px;
+  max-height: 1000px;
   object-fit: cover;
 }
  {
@@ -15,12 +15,13 @@ header, footer {
   color: #fff;
   text-align: center;
   padding: 20px;
-}
-
 .baner-glowny img {
-  width: 100%;
-  max-height: 250px; /* zmniejszamy wysokość banera */
-  object-fit: cover;
+    width: 100%;
+    max-width: 1000px;
+    max-height: 200px; /* zmniejszamy wysokość */
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
 }
 
 .logo-box {
