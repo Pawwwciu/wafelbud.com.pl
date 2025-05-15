@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Tor Browser
-Comment=Przeglądarka Tor (Darknet)
-Exec=flatpak run org.torproject.torbrowser-launcher
-Icon=torbrowser
-Terminal=false
-Type=Application
-Categories=Network;Security;
