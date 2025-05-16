@@ -29,6 +29,7 @@
   left: 10px;
   width: 40px;
   z-index: 1000;
+  animation: powiewanie 2s infinite ease-in-out;
 }
 
 .flaga-prawa-dol {
@@ -37,6 +38,15 @@
   right: 10px;
   width: 40px;
   z-index: 1000;
+  animation: powiewanie 2s infinite ease-in-out;
+}
+
+@keyframes powiewanie {
+  0% { transform: rotate(0deg) scale(1); }
+  25% { transform: rotate(1deg) scale(1.02); }
+  50% { transform: rotate(0deg) scale(1); }
+  75% { transform: rotate(-1deg) scale(1.02); }
+  100% { transform: rotate(0deg) scale(1); }
 }
   </style>
 </head>
@@ -188,10 +198,7 @@ Zobacz, oceń, zadzwoń. U nas nie ma ściemy – jest robota z Charakterem.</p>
   <footer>
     <p>&copy; 2025 WafelBud. Wszelkie prawa zastrzeżone.</p>
   </footer>
-<!-- Flaga w lewym górnym rogu -->
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Flag_of_Poland.svg" alt="Polska flaga" class="flaga-lewa-gora">
-
-<!-- Flaga w prawym dolnym rogu -->
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Flag_of_Poland.svg" alt="Polska flaga" class="flaga-prawa-dol">
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Flag_of_Poland.svg" class="flaga-lewa-gora" alt="Polska">
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Flag_of_Poland.svg" class="flaga-prawa-dol" alt="Polska">
 </body>
 </html>
