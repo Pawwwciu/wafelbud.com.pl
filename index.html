@@ -185,14 +185,20 @@ Zobacz, oceń, zadzwoń. U nas nie ma ściemy – jest robota z Charakterem.</p>
     </div>
 
     <!-- Prawa kolumna: Formularz -->
-    <form action="https://formsubmit.co/siemanko785029@gmail.com" method="POST" style="flex: 1; min-width: 280px; max-width: 400px;">
-      <input type="text" name="name" placeholder="Imię" required style="padding: 10px; font-size: 16px; border-radius: 5px; width: 100%; margin-bottom: 10px;" />
-      <input type="email" name="_replyto" placeholder="Email" required style="padding: 10px; font-size: 16px; border-radius: 5px; width: 100%; margin-bottom: 10px;" />
-      <textarea name="message" rows="5" placeholder="Wiadomość" required style="padding: 10px; font-size: 16px; border-radius: 5px; width: 100%; margin-bottom: 10px;"></textarea>
-      <button type="submit" style="background: #25D366; color: white; padding: 10px; border: none; cursor: pointer; font-size: 16px; border-radius: 5px;">
-  Wyślij
-</button>
-    </form>
+    <!-- Prawa kolumna: Formularz z możliwością załączenia pliku -->
+<form action="https://formsubmit.co/siemanko785029@gmail.com" method="POST" enctype="multipart/form-data" style="flex: 1; min-width: 280px; max-width: 400px; display: flex; flex-direction: column; gap: 10px;">
+  <input type="text" name="name" placeholder="Imię" required style="padding: 10px; font-size: 16px; border-radius: 5px;">
+  <input type="email" name="_replyto" placeholder="Email" required style="padding: 10px; font-size: 16px; border-radius: 5px;">
+  <textarea name="message" rows="5" placeholder="Wiadomość" required style="padding: 10px; font-size: 16px; border-radius: 5px;"></textarea>
+  
+  <!-- NOWE POLE DO ZAŁĄCZENIA PLIKU -->
+  <label for="attachment" style="font-size: 14px; color: #555;">Załącz plik (np. zdjęcie, projekt PDF):</label>
+  <input type="file" name="attachment" id="attachment" style="font-size: 14px;">
+
+  <button type="submit" style="background: #25D366; color: white; padding: 10px; border: none; cursor: pointer; font-size: 16px; border-radius: 5px;">
+    Wyślij
+  </button>
+</form>
 
   </div>
 </section>
